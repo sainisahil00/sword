@@ -1,0 +1,10 @@
+{
+  "name": "sword-atlas",
+  "version": "1.0.0",
+  "description": "Static sword encyclopedia generated with Node.js, ready for S3 static website hosting",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "node build.js && aws s3 sync dist/ s3://YOUR-BUCKET-NAME --delete"
+  },
+  "engines": { "node": ">=16.7" }
+}
