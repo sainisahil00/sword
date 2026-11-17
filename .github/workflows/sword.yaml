@@ -76,7 +76,7 @@ jobs:
 
       - name: Deploy Website to S3
         run: |
-          aws s3 sync dist/ s3://proj-s3-pr/ --delete
+          aws s3 sync dist/ s3://pro-ject-s3/ --delete
 
       - name: Deployment Completed
         run: |
